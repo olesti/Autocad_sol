@@ -1,0 +1,34 @@
+﻿<Window x:Class="Autocadsolarian.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Autocadsolarian"
+             mc:Ignorable="d" Width="379" Height="444">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFD0EA66"/>
+                <GradientStop Color="#FFE83737" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="205" Margin="56,98,0,0">
+            <Label Content="Width" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="txt_width" HorizontalAlignment="Left" Margin="85,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" TextChanged="txt_width_TextChanged"/>
+
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="205" Margin="56,134,0,0">
+            <Label Content="Depth" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="txt_depth" HorizontalAlignment="Left" Margin="85,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" TextChanged="txt_depth_TextChanged"/>
+
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="205" Margin="56,170,0,0">
+            <Label Content="Height" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="txt_height" HorizontalAlignment="Left" Margin="85,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+
+        </Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="216,241,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+    </Grid>
+
+</Window>
