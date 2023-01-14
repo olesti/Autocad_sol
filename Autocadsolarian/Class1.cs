@@ -37,38 +37,11 @@ namespace Autocadsolarian
             System.Windows.Size szApp = new System.Windows.Size(400, 400);
             Autodesk.AutoCAD.ApplicationServices.Application.MainWindow.DeviceIndependentSize = szApp;
         }
-        [CommandMethod("atalay")]
-        public static void atalay()
+        [CommandMethod("solarian")]
+        public static void solarian()
         {
             var dialog = new UserControl1();
             var result = Application.ShowModalWindow(dialog);
-            // First, the button items are created:
-            Autodesk.AutoCAD.Customization.RibbonButton button1 = new RibbonButton();
-            button1.Text = "Button1";
-
-            RibbonButton button2 = new RibbonButton;
-            button2.Text = "Button2";
-
-            // These are then added to a row:
-            RibbonRow row = new RibbonRow();
-            row.RowItems.Add(button1);
-            row.RowItems.Add(button2);
-
-            // This row is added to a panel source, which is then added to a panel:
-            RibbonPanelSource panelSource = new RibbonPanelSource();
-            panelSource.Title = "Panel1";
-            panelSource.Rows.Add(row);
-
-            RibbonPanel panel = new RibbonPanel();
-            panel.Source = panelSource;
-
-            // Last, the panel is added to a tab, which is added to the ribbon:
-            RibbonTab tab = new RibbonTab();
-            tab.Title = "Tab1";
-            tab.Panels.Add(panel);
-
-            RibbonControl ribbon = new RibbonControl();
-            ribbon.Tabs.Add(tab);
 
         }
 
