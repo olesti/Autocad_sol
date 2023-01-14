@@ -40,6 +40,7 @@
     </Reference>
     <Reference Include="AcCui">
       <HintPath>..\..\..\..\..\..\Program Files\Autodesk\AutoCAD 2023\AcCui.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="AcDbMgd, Version=24.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoCAD.NET.Model.24.2.0\lib\net47\AcDbMgd.dll</HintPath>
